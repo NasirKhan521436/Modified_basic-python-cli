@@ -1,18 +1,77 @@
-# Basic Python CLI
-An ultra basic Python CLI example with no frameworks or dependencies. In just a few minutes you can have all you need to create a super simple, single-file Python CLI tool without any external dependencies or frameworks.
+# Modified Basic Python CLI
 
-## Watch the Video tutorial
+A minimal Python Command Line Interface (CLI) tool to calculate the size of a given file in megabytes (MB), built without external CLI frameworks. Includes basic testing with `pytest`.
+
+## 🛠 Features
+
+- Pure Python CLI (no external CLI frameworks)
+- Simple usage: Pass a file path as an argument
+- Includes a help message for empty input
+- Unit tested with `pytest`
+
+## 📦 Requirements
+
+- Python 3.6+
+- [pytest](https://docs.pytest.org/) (for testing)
+
+Install `pytest`:
+
+```bash
+pip install pytest
+```
+
+## 🚀 Usage
+
+From the terminal:
+
+```bash
+python cli.py yourfile.txt
+```
+
+Example output:
+
+```
+3 MB
+```
+
+If no argument is passed:
+
+```bash
+python cli.py
+```
+
+Output:
+
+```
+This is a CLI tool that calculates file sizes
+and it takes a single argument
+```
+
+## ✅ Running Tests
+
+Run tests with `pytest`:
+
+```bash
+python -m pytest -v
+```
+
+Or (if pytest is in your PATH):
+
+```bash
+pytest -v
+```
+
+## 📺 Video Tutorial (Original Version)
 
 [![Build a simple CLI in Python tutorial](https://img.youtube.com/vi/DrmdOb-EEMw/0.jpg)](https://youtu.be/DrmdOb-EEMw "Build a simple CLI in Python")
 
-## What you will learn
+## 🔄 Next Steps
 
-Build a very simple command line tool with Python without using external dependencies or frameworks. In this video you'll see how with just a few lines of Python you can transform a file into a script with a help menu.
+Now that you have a working CLI:
+- Try extending it using `argparse` or `Click`
+- Add more features (e.g., show size in KB or GB)
+- Package it with `setuptools` for pip installation
 
-Although you can create more powerful command-line tools with other frameworks like argparse or external libraries like Click, you can still implement a quick script without them that includes a help menu
-
-## Why would you want to do this
-Because you need something very quick, easy to run, ideally with a single argument, and most of the time for other systems to use. No need for fancy help menus (although you can add those), and hopefully with a single task to do.
-
-## Next steps
-Now that you know how to do this minimal Python CLI tool, you can try out other frameworks like Python's `argparse` module or the Click framework. I have examples and guides for [argparse CLI tools](https://github.com/alfredodeza/argparse-python-cli) and for [using the Click framework](https://github.com/alfredodeza/click-python-cli).
+Explore:
+- [argparse CLI example](https://github.com/alfredodeza/argparse-python-cli)
+- [Click framework CLI example](https://github.com/alfredodeza/click-python-cli)
