@@ -1,5 +1,11 @@
+#Company: CODTECH IT SOLUTIONS
+#NAME:  NASIR HUSSAIN KHAN
+#INTERN ID: CT12WE82
+#DOMAIN: Software Development
+#Duration: 12 weeks
+#Mentor: NEELA SANTOSH
+## INTERNSHIP TASK 4:  CODE REFACTORING AND PERFORMANCE OPTIMIZATION
 # Modified Basic Python CLI
-
 A minimal Python Command Line Interface (CLI) tool to calculate the size of a given file in megabytes (MB), built without external CLI frameworks. Includes basic testing with `pytest`.
 
 ## 🛠 Features
